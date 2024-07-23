@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Produtos</h1>
+
+        <!-- Formulário de Registro -->
+        <div id="register-form" class="form-container">
+            <h2>Registrar</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="Usuário" required>
+                <input type="password" id="register-password" placeholder="Senha" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+
+        <!-- Formulário de Login -->
+        <div id="login-form" class="form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="Usuário" required>
+                <input type="password" id="login-password" placeholder="Senha" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        
+        <div id="product-list">
+            <h2>Lista de Produtos</h2>
+            <ul id="products"></ul>
+        </div>
+
+    
+        <div id="product-form" class="form-container">
+            <h2 id="product-form-title">Adicionar Produto</h2>
+            <form id="form-product">
+                <input type="hidden" id="product-id">
+                <input type="text" id="product-name" placeholder="Nome do Produto" required>
+                <input type="text" id="product-price" placeholder="Preço" required>
+                <button type="submit" id="submit-product">Adicionar Produto</button>
+                <button type="button" id="cancel-product">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
